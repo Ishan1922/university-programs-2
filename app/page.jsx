@@ -5,7 +5,7 @@ import { fetchAllPrograms } from "./lib/data";
 import Link from "next/link";
 
 export default async function Home() {
-  const progs = await fetchAllPrograms();
+  // const progs = await fetchAllPrograms();
   // console.log("web pe : ",progs);
   return (
     <div className="m-10 min-h-screen">
@@ -13,9 +13,9 @@ export default async function Home() {
         <div className="w-1/4 p-2 border">
           <h2 className="my-2">Program list</h2>
           <div className="border p-1 my-2">
-            {progs?.map((p) => (
+            {/* {progs?.map((p) => (
               <h1 key={p.id}>{p.name}</h1>
-            ))}
+            ))} */}
           </div>
           <div className="my-3">
           <Link href='/create' className="border p-1 my-2">
