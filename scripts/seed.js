@@ -11,7 +11,7 @@ async function seedPrograms(client) {
         name VARCHAR(255) NOT NULL,
         price INT NOT NULL,
         domain TEXT NOT NULL,
-        program_type TEXT NOT NULL,
+        program_type BOOLEAN NOT NULL,
         registration_open BOOLEAN NOT NULL,
         description TEXT ,
         placement_assurance BOOLEAN,

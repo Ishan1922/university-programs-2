@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/lib/definitions.js", "app/lib/data.js", "app/ui/create-form.js"  ],
+, "app/lib/definitions.js", "app/lib/data.js", "app/ui/create-form.jsx"  ],
   "exclude": [
     "node_modules"
   ]

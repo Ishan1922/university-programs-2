@@ -1,11 +1,11 @@
-// import AddForm from "../ui/create-form";
+import AddForm from "../ui/create-form";
 
 export default function Page() {
   return (
     <div className="m-10 min-h-screen">
       <div>
-        hello
-        {/* <AddForm/> */}
+        
+        <AddForm/>
       </div>
     </div> 
   );
