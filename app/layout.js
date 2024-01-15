@@ -16,7 +16,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="max-h-screen">
+        <div className="h-screen">
           <Navbar />
           <div className="flex ">
             <div className="w-1/4 border-r-2 border-gray-400 h-100vh">
