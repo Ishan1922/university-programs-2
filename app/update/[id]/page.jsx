@@ -10,7 +10,7 @@ export default async function EditProgram(params) {
       const curr = await getProgramById(params_id);
       // console.log('this is curr: ',curr);
       return(
-            <div className="m-10 min-h-screen">
+            <div className="pl-10 pt-10">
                   <UpdateForm formdata={curr}/>
             </div>
       )

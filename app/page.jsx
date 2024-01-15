@@ -1,9 +1,7 @@
-
-// import { UserButton, currentUser } from "@clerk/nextjs";
-import Image from "next/image";
 import { fetchAllPrograms } from "./lib/data";
-import Link from "next/link";
-import AllProgs from '../app/ui/all-progs';
+import AllProgs from "../app/ui/all-progs";
+import AddForm from "./ui/create-form";
+import Navbar from "./ui/navbar";
 
 export default async function Home() {
   const progs = await fetchAllPrograms();
@@ -11,8 +9,9 @@ export default async function Home() {
   // const currentUser = currentUser;
 
   return (
-    <div className="m-10 min-h-screen">
-      <AllProgs progs={progs}/>
+    <div className="flex flex-col justify-center text-center font-black text-6xl h-full">
+      <div>Welcome To</div>
+      <div>Program Dashboard!</div>
     </div>
   );
 }

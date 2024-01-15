@@ -15,12 +15,12 @@ export default function UpdateButton(props) {
   }
   return (
     <div className="flex flex-row text-center justify-center gap-1">
-    <Link href={`/update/${props.id}`} className="p-1 border rounded-full">
+    <Link href={`/update/${props.id}`} className="p-1 rounded-full hover:bg-black hover:text-white">
       <EditIcon />
     </Link>
-    <button onClick={handleClick} className="p-1 border rounded-full">
+    {/* <button onClick={handleClick} className="p-1 border rounded-full">
       <DeleteIcon/>
-    </button>
+    </button> */}
     </div>
   );
 }
