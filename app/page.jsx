@@ -1,5 +1,5 @@
 
-import { UserButton, currentUser } from "@clerk/nextjs";
+// import { UserButton, currentUser } from "@clerk/nextjs";
 import Image from "next/image";
 import { fetchAllPrograms } from "./lib/data";
 import Link from "next/link";
@@ -12,7 +12,6 @@ export default async function Home() {
 
   return (
     <div className="m-10 min-h-screen">
-      <UserButton/>
       <AllProgs progs={progs}/>
     </div>
   );
