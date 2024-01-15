@@ -16,10 +16,10 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="h-screen">
+        <div className="max-h-screen">
           <Navbar />
-          <div className="flex">
-            <div className="w-1/4 border-r-2 border-gray-400 min-h-screen">
+          <div className="flex ">
+            <div className="w-1/4 border-r-2 border-gray-400 h-100vh">
               <AllProgs progs={progs} />
             </div>
             <div className="w-3/4">{children}</div>

@@ -22,7 +22,7 @@ export default function AllProgs(props) {
   };
   return (
     <div className="w-full ">
-      <div className="h-1/6">
+      <div className="">
         <div className="flex justify-between my-10 px-6">
           <h2 className="text-3xl font-bold w-full">Program list</h2>
           <Link
