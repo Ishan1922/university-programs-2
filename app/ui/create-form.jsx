@@ -316,7 +316,7 @@ export default function AddForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="font-semibold my-4 bg-blue-600 p-2 px-3 text-white hover:bg-black hover:border rounded"
+            className="font-semibold my-4 bg-blue-900 p-2 px-3 text-white hover:bg-black hover:border rounded"
           >
             Save Program
           </button>

@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col justify-center text-center font-black text-6xl h-full">
       <div>Welcome To</div>
-      <div>Program Dashboard!</div>
+      <div className="">Program Dashboard!</div>
     </div>
   );
 }

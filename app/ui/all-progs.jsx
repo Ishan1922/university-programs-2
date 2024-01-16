@@ -7,8 +7,9 @@ import { useEffect, useState } from "react";
 
 export default function AllProgs(props) {
   let progs = props.progs;
-  // progs = [...progs].reverse();
+  progs = [...progs].reverse();
   const [search , setSearch] = useState("");
+  const [color, setColor] = useState("");
   const [filteredPrograms, setFilteredPrograms] = useState([]);
   useEffect(() => {
     const filtered = progs.filter(progs => progs.name.toLowerCase().includes(search.toLowerCase()));
@@ -20,14 +21,17 @@ export default function AllProgs(props) {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
+  function changeColor () {
+
+  }
   return (
-    <div className="w-full ">
+    <div className="w-full  ">
       <div className="">
         <div className="flex justify-between my-10 px-6">
           <h2 className="text-3xl font-bold w-full">Program list</h2>
           <Link
             href="/create"
-            className="rounded-full p-2 bg-blue-600 text-white text-center hover:bg-black hover:text-white hover:shadow-md my-auto "
+            className="rounded-full p-2 bg-blue-900 text-white text-center hover:bg-black hover:text-white hover:shadow-md my-auto "
           >
             <AddIcon />
           </Link>
@@ -48,7 +52,8 @@ export default function AllProgs(props) {
           {filteredPrograms?.map((p) => (
             <Link key={p.id} href={`/view/${p.id}`} >
               <div
-              className=" border flex justify-between py-3 items-center px-6 hover:bg-blue-200 hover:border-r-2"
+              className=" border flex justify-between py-3 items-center px-6 hover:bg-blue-900 hover:border-r-2 hover:bg-opacity-20"
+              onClick={changeColor}
             >
               <div className="flex">
                 <StopIcon/>

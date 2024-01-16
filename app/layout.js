@@ -19,10 +19,10 @@ export default async function RootLayout({ children }) {
         <div className="h-screen">
           <Navbar />
           <div className="flex ">
-            <div className="w-1/4 border-r-2 border-gray-400 h-100vh">
+            <div className="w-1/4 hidden lg:block border-r-2 border-gray-400 ">
               <AllProgs progs={progs} />
             </div>
-            <div className="w-3/4">{children}</div>
+            <div className="lg:w-3/4 w-full items-center">{children}</div>
           </div>
         </div>
       </body>

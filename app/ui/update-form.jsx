@@ -304,13 +304,13 @@ export default function UpdateForm(props) {
             
             // disabled={isSubmitting}
             onClick={handleDelete}
-            className=" font-semibold flex gap-2 my-4 border border-red-500 p-2 text-red-500 hover:bg-black rounded"
+            className=" font-semibold flex gap-2 my-4 border-2 border-red-500 p-2 text-red-500 hover:bg-black rounded"
           >
             <DeleteIcon/> Delete
           </button>
           <button
             type="submit"
-            className="font-semibold my-4 bg-blue-600 p-2 px-3 text-white hover:bg-black hover:border rounded"
+            className="font-semibold my-4 bg-blue-900 p-2 px-3 text-white hover:bg-black hover:border rounded"
           >
             Save Program
           </button>

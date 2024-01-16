@@ -39,7 +39,7 @@ export default function ViewProgram(props) {
     <div className="pr-10 h-full focus:outline-none">
       <form  className="w-full">
         <div className="mb-10">
-          <h1 className="text-3xl font-bold">Viewing Program</h1>
+          <h1 className="text-3xl font-bold">Viewing <span className="text-blue-900">{name}</span> Program</h1>
           <p className="text-gray-400 text-xs">
             <span className="text-red-500">*</span>Required to save as program.
           </p>
